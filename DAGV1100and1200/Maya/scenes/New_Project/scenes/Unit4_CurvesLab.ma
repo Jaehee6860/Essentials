@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: Potted Plant.ma
-//Last modified: Fri, Feb 06, 2026 11:45:04 PM
+//Name: Unit4_CurvesLab.ma
+//Last modified: Fri, Feb 06, 2026 11:45:47 PM
 //Codeset: 949
 requires maya "2025ff03";
 requires -nodeType "bluePencil" -dataType "czLayerData" "bluePencil" "2.6.1";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "825AAF70-4811-7B82-C781-90853121AE7A";
+fileInfo "UUID" "BE802259-4199-5741-F9DF-50B8B9152D48";
 createNode transform -s -n "persp";
 	rename -uid "3BC021B5-44D5-71D0-448B-31BE5D22D05A";
 	setAttr ".v" no;
@@ -2131,20 +2131,20 @@ createNode bluePencil -n "bluePencilShape" -p "bluePencil";
 	setAttr ".ld" -type "czLayerData" 3 1 "3BC021B5-44D5-71D0-448B-31BE5D22D05A" 0
 		;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "B1FAD14F-43CA-E8A1-1DDF-41A87AAF9101";
+	rename -uid "39DAB7B2-469F-B9B2-82AA-85ADC3ACDCFA";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "C420DA77-4898-0039-D14C-72A3E91D4549";
+	rename -uid "4B693867-4357-86BD-9275-CFB0EB640E7D";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "89ECE77A-4996-C5E0-29B7-F09BC43AC73A";
+	rename -uid "38E650B3-4AD3-2FFB-30AF-7385A7D13862";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D73100D9-43A7-6F5F-C62F-50AE448C83DE";
+	rename -uid "F8E93A6D-40AF-8BB5-F3A8-CA834266D87F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "23270862-4195-5C1F-68AF-87B5FE5950B2";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E1F928F6-4177-FC24-F66D-53BF4F2D6B3A";
+	rename -uid "992964E3-41C1-CCA6-FCDE-20B129269AFC";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "06B638F6-4E3D-231E-A930-4087B520836B";
 	setAttr ".g" yes;
@@ -2238,8 +2238,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -2254,4 +2252,4 @@ connectAttr "|Pot|Dirt|Leaf2|LeahShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "DirtShape.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "|Pot|Dirt|Leaf4|LeahShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "|Pot|Dirt|Leaf5|LeahShape2.iog" ":initialShadingGroup.dsm" -na;
-// End of Potted Plant.ma
+// End of Unit4_CurvesLab.ma
