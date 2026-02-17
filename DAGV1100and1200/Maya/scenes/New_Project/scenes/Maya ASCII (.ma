@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Maya ASCII (.ma
-//Last modified: Mon, Feb 16, 2026 12:06:00 AM
+//Last modified: Tue, Feb 17, 2026 01:20:35 AM
 //Codeset: 949
 file -rdi 1 -ns "Cup" -rfn "CupRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Cup.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -28,12 +28,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "A5F4E627-43C2-BA5E-19D8-B8B1CD3FD834";
+fileInfo "UUID" "3DC0D128-487D-EC97-8BEA-0294259CDEFD";
 createNode transform -s -n "persp";
 	rename -uid "75A3B180-45F2-60BC-2DB3-4392682CB510";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 31.33212759985647 29.647771276152941 47.558150163787076 ;
-	setAttr ".r" -type "double3" -19.800000000000548 26.399999999999945 8.8771712693975126e-16 ;
+	setAttr ".t" -type "double3" 27.179713259776847 30.950112218851917 48.910254742871729 ;
+	setAttr ".r" -type "double3" -21.000000000000032 22.399999999999995 0 ;
 	setAttr ".rpt" -type "double3" 2.2545403595187595e-14 2.9851814797948432e-15 -3.861845150107324e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D753C933-4E49-044D-795C-6D8C9D76BFBB";
@@ -1846,15 +1846,15 @@ createNode transform -n "group1";
 	setAttr ".r" -type "double3" 0 90.980511631167829 0 ;
 	setAttr ".s" -type "double3" 0.7826536219197171 0.77602661970404418 0.77602661970404418 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "48A918E6-4145-0A70-EC98-08AE766B5548";
+	rename -uid "18DA8ABE-4734-C3D7-F6AB-C085317D0BB1";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "4E296FB6-460E-C3B1-5A5E-2797E5E3E42D";
+	rename -uid "BBB136A4-4331-3D9C-83DE-3DA1094C8786";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "117A0737-4B7C-45DB-8B81-F0B2C7FD2630";
+	rename -uid "3AEC1E37-4792-DF29-D471-19B4FF6A05D4";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "FF27C5B6-4249-4B61-C2D7-DF8C4F3A3381";
+	rename -uid "727F1208-480C-EE8C-4DD6-2C8E050516A9";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -1862,7 +1862,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "61A48A48-46F5-9420-1FD4-5293498352F0";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "4E516CAD-44F6-6FBA-74D3-6DA25DB60654";
+	rename -uid "7D13D0CD-42E8-5C82-8E43-17AC58E0C990";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3B2B05CA-401E-3C73-0928-4C9C285E138E";
 	setAttr ".g" yes;
@@ -2206,13 +2206,13 @@ createNode reference -n "ChairRN";
 		
 		2 "|Chair:ChairMesh2|Chair:polySurface8|Chair:polySurfaceShape12" "uvSet[0].uvSetName" 
 		" -type \"string\" \"map1\""
-		3 "Chair:polySplitRing5.output" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
-		""
 		3 "Chair:polySplitRing4.output" "|Chair:ChairMesh2|Chair:polySurface4|Chair:polySurfaceShape8.inMesh" 
 		""
-		3 "Chair:polySplitRing3.output" "|Chair:ChairMesh2|Chair:polySurface1|Chair:polySurfaceShape5.inMesh" 
+		3 "Chair:polySplitRing5.output" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
 		""
 		3 "Chair:polySplitRing2.output" "|Chair:ChairMesh2|Chair:polySurface8|Chair:polySurfaceShape12.inMesh" 
+		""
+		3 "Chair:polySplitRing3.output" "|Chair:ChairMesh2|Chair:polySurface1|Chair:polySurfaceShape5.inMesh" 
 		""
 		5 4 "ChairRN" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
 		"ChairRN.placeHolderList[1]" ""
@@ -2286,11 +2286,11 @@ createNode reference -n "ChairRN1";
 		
 		2 "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12" "uvSet[0].uvSetName" 
 		" -type \"string\" \"map1\""
+		3 "Chair1:polySplitRing3.output" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.inMesh" 
+		""
 		3 "Chair1:polySplitRing2.output" "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12.inMesh" 
 		""
 		3 "Chair1:polySplitRing5.output" "|Chair1:ChairMesh2|Chair1:ChairMesh2|Chair1:ChairMeshShape2.inMesh" 
-		""
-		3 "Chair1:polySplitRing3.output" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.inMesh" 
 		""
 		3 "Chair1:polySplitRing4.output" "|Chair1:ChairMesh2|Chair1:polySurface4|Chair1:polySurfaceShape8.inMesh" 
 		""
@@ -2568,8 +2568,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "transformGeometry1.og" "ChairRN.phl[1]";
 connectAttr "transformGeometry2.og" "ChairRN.phl[2]";
 connectAttr "transformGeometry3.og" "ChairRN.phl[3]";
