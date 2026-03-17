@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Chair.ma
-//Last modified: Sat, Mar 14, 2026 12:08:23 AM
+//Last modified: Tue, Mar 17, 2026 12:38:32 AM
 //Codeset: 949
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "1F69B91F-4C14-E864-4696-FAB29708B265";
+fileInfo "UUID" "26680C8C-48D8-74AF-1C27-C2AD7D912CC9";
 createNode transform -n "ChairMesh2";
 	rename -uid "E7F4752C-43AA-E6E1-0FE1-CEB45119B98D";
 	setAttr ".rp" -type "double3" -6.2795690326837947 -1.6110971527740547 -2.1290614769696781 ;
@@ -621,20 +621,20 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CF6286B5-48D9-505E-CC08-D7B013C61A92";
+	rename -uid "61DBE686-43C6-E710-8C30-AAA0DB4079B4";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E4B82DD6-457E-161E-A7EE-9A81327BBDA3";
+	rename -uid "094BB5D1-452F-FF00-D71A-46A96347240F";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6FB45F1D-4360-87C1-8BB8-9DA0D194B370";
+	rename -uid "4D8B2753-429B-3C64-DFC4-E0943AEF822E";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "7728A8CB-4E50-E59F-A0E8-29ACC510E5DB";
+	rename -uid "E2B3DC93-48EC-3774-C34C-669860D4B4C1";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "52E2CAE8-4591-D470-7ED4-B9AA96292184";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C7EBD830-42C3-C5DC-EC89-4084495E8D6F";
+	rename -uid "3D6606F1-4783-61D3-3363-37A9D6A76A20";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "36A53986-4680-1AE6-EEB2-45A71494D06D";
 	setAttr ".g" yes;

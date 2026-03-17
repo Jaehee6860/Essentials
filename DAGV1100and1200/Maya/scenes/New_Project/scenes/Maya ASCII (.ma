@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Maya ASCII (.ma
-//Last modified: Sat, Mar 14, 2026 12:06:32 AM
+//Last modified: Tue, Mar 17, 2026 12:37:50 AM
 //Codeset: 949
 file -rdi 1 -ns "Cup" -rfn "CupRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Cup.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -53,7 +53,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "A01C89FB-4EB6-D9D2-799C-119359F2D0B5";
+fileInfo "UUID" "D7BB00E9-41F3-D634-9A50-41B05FF13C4D";
 createNode transform -s -n "persp";
 	rename -uid "75A3B180-45F2-60BC-2DB3-4392682CB510";
 	setAttr ".v" no;
@@ -1881,7 +1881,7 @@ createNode transform -n "group2";
 	setAttr ".r" -type "double3" -1.2116484358962289 88.031795394789683 2.8939478067345466e-15 ;
 	setAttr ".s" -type "double3" 0.90711522534761235 0.98313383643564423 0.64629205999781358 ;
 createNode fosterParent -n "Table1:TableRNfosterParent1";
-	rename -uid "9D8882D7-4E0D-2A52-697C-82B0EC6D2FA8";
+	rename -uid "4FE9D871-4B69-9A7E-7E99-E5903608380E";
 createNode mesh -n "Table1:Table:polySurfaceShape1" -p "Table1:TableRNfosterParent1";
 	rename -uid "44CC1FED-4B87-F431-2FE3-00A2F9356880";
 	setAttr -k off ".v";
@@ -2402,15 +2402,15 @@ createNode mesh -n "Table1:Table:polySurfaceShape1" -p "Table1:TableRNfosterPare
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "4DCFF1E0-461B-B6B3-C66E-31AE67F9981E";
+	rename -uid "3877C8E3-4B65-D438-BC82-6F91AFF0DA3A";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D3AB0579-48E6-AD3B-E2CD-CBA5852FA98A";
+	rename -uid "B4D6FBBE-407C-6633-A3C5-0DA1BA561006";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E70C2DCB-4DAC-2BD1-23BF-36AEE8D155D5";
+	rename -uid "A6904B77-450A-F68B-F03A-C4B592BCF5AD";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A2E6784B-48B5-10CC-F23C-7EA8A23304D4";
+	rename -uid "6A4DA6E9-4CD1-6245-E2A8-DD861BD5F28D";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -2418,7 +2418,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "61A48A48-46F5-9420-1FD4-5293498352F0";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "76EC863D-4C99-437F-2E61-8B8993E724F0";
+	rename -uid "7ED7F893-425A-335C-C4B9-5193612525BD";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3B2B05CA-401E-3C73-0928-4C9C285E138E";
 	setAttr ".g" yes;
@@ -2777,11 +2777,11 @@ createNode reference -n "ChairRN";
 		" -type \"string\" \"map1\""
 		3 "Chair:polySplitRing3.output" "|Chair:ChairMesh2|Chair:polySurface1|Chair:polySurfaceShape5.inMesh" 
 		""
-		3 "Chair:polySplitRing5.output" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
-		""
 		3 "Chair:polySplitRing2.output" "|Chair:ChairMesh2|Chair:polySurface8|Chair:polySurfaceShape12.inMesh" 
 		""
 		3 "Chair:polySplitRing4.output" "|Chair:ChairMesh2|Chair:polySurface4|Chair:polySurfaceShape8.inMesh" 
+		""
+		3 "Chair:polySplitRing5.output" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
 		""
 		5 4 "ChairRN" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
 		"ChairRN.placeHolderList[1]" ""
@@ -2855,13 +2855,13 @@ createNode reference -n "ChairRN1";
 		
 		2 "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12" "uvSet[0].uvSetName" 
 		" -type \"string\" \"map1\""
-		3 "Chair1:polySplitRing2.output" "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12.inMesh" 
-		""
-		3 "Chair1:polySplitRing3.output" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.inMesh" 
-		""
 		3 "Chair1:polySplitRing4.output" "|Chair1:ChairMesh2|Chair1:polySurface4|Chair1:polySurfaceShape8.inMesh" 
 		""
+		3 "Chair1:polySplitRing2.output" "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12.inMesh" 
+		""
 		3 "Chair1:polySplitRing5.output" "|Chair1:ChairMesh2|Chair1:ChairMesh2|Chair1:ChairMeshShape2.inMesh" 
+		""
+		3 "Chair1:polySplitRing3.output" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.inMesh" 
 		""
 		5 4 "ChairRN1" "|Chair1:ChairMesh2|Chair1:ChairMesh2|Chair1:ChairMeshShape2.inMesh" 
 		"ChairRN1.placeHolderList[1]" ""
@@ -4375,8 +4375,8 @@ createNode reference -n "BooksRN1";
 	setAttr ".phl[18]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BooksRN1"
-		"Books1:BooksRN" 0
 		"BooksRN1" 0
+		"Books1:BooksRN" 0
 		"BooksRN1" 9
 		5 3 "BooksRN1" "Books1:Books:polyMapCut110.output" "BooksRN1.placeHolderList[10]" 
 		"Books1:Books:Book4Shape.i"
@@ -4396,7 +4396,7 @@ createNode reference -n "BooksRN1";
 		"Books1:Books:Book1Shape.i"
 		5 3 "BooksRN1" "Books1:Books:polyMapCut118.output" "BooksRN1.placeHolderList[18]" 
 		"Books1:Books:Book2Shape.i"
-		"Books1:BooksRN" 76
+		"Books1:BooksRN" 77
 		2 "|Books1:Books:BookGRP" "translate" " -type \"double3\" 0 0 0"
 		2 "|Books1:Books:BookGRP" "scale" " -type \"double3\" 1 1 1"
 		2 "|Books1:Books:BookGRP" "rotatePivot" " -type \"double3\" 10.00374388070585852 2.6181525094334166 -28.59499200812002329"
@@ -4411,6 +4411,8 @@ createNode reference -n "BooksRN1";
 		
 		2 "|Books1:Books:BookGRP|Books1:Books:Book1" "scalePivot" " -type \"double3\" 8.52342897259151044 1.80203087420635688 -6.98900193644450862"
 		
+		2 "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape" "uvPivot" 
+		" -type \"double2\" 0.5 0.49999999999999994"
 		2 "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape" "uvSet[0].uvSetName" 
 		" -type \"string\" \"map1\""
 		2 "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape" "pt[0:31]" 
@@ -4520,23 +4522,23 @@ createNode reference -n "BooksRN1";
 		2 "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape" "pt[0:31]" 
 		" -s 32 -type \"float3\" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		
-		3 "Books1:Books:polyMapCut113.output" "|Books1:Books:BookGRP|Books1:Books:Book10|Books1:Books:Book10Shape.inMesh" 
-		""
-		3 "Books1:Books:polyMapCut114.output" "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape.inMesh" 
+		3 "Books1:Books:polyMapCut118.output" "|Books1:Books:BookGRP|Books1:Books:Book2|Books1:Books:Book2Shape.inMesh" 
 		""
 		3 "Books1:Books:polyMapCut117.output" "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape.inMesh" 
 		""
 		3 "Books1:Books:polyMapCut112.output" "|Books1:Books:BookGRP|Books1:Books:Book8|Books1:Books:Book8Shape.inMesh" 
 		""
-		3 "Books1:Books:polyMapCut118.output" "|Books1:Books:BookGRP|Books1:Books:Book2|Books1:Books:Book2Shape.inMesh" 
+		3 "Books1:Books:polyMapCut115.output" "|Books1:Books:BookGRP|Books1:Books:Book9|Books1:Books:Book9Shape.inMesh" 
 		""
-		3 "Books1:Books:polyMapCut116.output" "|Books1:Books:BookGRP|Books1:Books:Book3|Books1:Books:Book3Shape.inMesh" 
+		3 "Books1:Books:polyMapCut113.output" "|Books1:Books:BookGRP|Books1:Books:Book10|Books1:Books:Book10Shape.inMesh" 
 		""
 		3 "Books1:Books:polyMapCut110.output" "|Books1:Books:BookGRP|Books1:Books:Book4|Books1:Books:Book4Shape.inMesh" 
 		""
-		3 "Books1:Books:polyMapCut115.output" "|Books1:Books:BookGRP|Books1:Books:Book9|Books1:Books:Book9Shape.inMesh" 
-		""
 		3 "Books1:Books:polyMapCut111.output" "|Books1:Books:BookGRP|Books1:Books:Book7|Books1:Books:Book7Shape.inMesh" 
+		""
+		3 "Books1:Books:polyMapCut116.output" "|Books1:Books:BookGRP|Books1:Books:Book3|Books1:Books:Book3Shape.inMesh" 
+		""
+		3 "Books1:Books:polyMapCut114.output" "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape.inMesh" 
 		""
 		5 4 "BooksRN1" "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape.inMesh" 
 		"BooksRN1.placeHolderList[1]" ""
@@ -4993,6 +4995,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "TableRN.phl[1]" "lambert1SG.dsm" -na;
 connectAttr "transformGeometry1.og" "ChairRN.phl[1]";
 connectAttr "transformGeometry2.og" "ChairRN.phl[2]";
