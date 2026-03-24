@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Maya ASCII (.ma
-//Last modified: Sun, Mar 22, 2026 03:05:37 AM
+//Last modified: Tue, Mar 24, 2026 12:00:39 AM
 //Codeset: 949
 file -rdi 1 -ns "Cup" -rfn "CupRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Cup.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -47,13 +47,14 @@ file -r -ns "Potted_Plant1" -dr 1 -rfn "Potted_PlantRN1" -op "v=0;" -typ "mayaAs
 requires maya "2025ff03";
 requires -dataType "czLayerData" "bluePencil" "2.6.1";
 requires "stereoCamera" "10.0";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "EB704356-4024-46C9-CDD5-34AEB212E28B";
+fileInfo "UUID" "60BB062E-4B7E-B593-434B-5F80F5154F42";
 createNode transform -s -n "persp";
 	rename -uid "75A3B180-45F2-60BC-2DB3-4392682CB510";
 	setAttr ".v" no;
@@ -1881,7 +1882,7 @@ createNode transform -n "group2";
 	setAttr ".r" -type "double3" -1.2116484358962289 88.031795394789683 2.8939478067345466e-15 ;
 	setAttr ".s" -type "double3" 0.90711522534761235 0.98313383643564423 0.64629205999781358 ;
 createNode fosterParent -n "Table1:TableRNfosterParent1";
-	rename -uid "05877237-4DB0-0C41-D141-65AFAE40A042";
+	rename -uid "DCA12BB0-426C-6747-2571-5FA9E352B101";
 createNode mesh -n "Table1:Table:polySurfaceShape1" -p "Table1:TableRNfosterParent1";
 	rename -uid "44CC1FED-4B87-F431-2FE3-00A2F9356880";
 	setAttr -k off ".v";
@@ -2402,15 +2403,15 @@ createNode mesh -n "Table1:Table:polySurfaceShape1" -p "Table1:TableRNfosterPare
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "3C636B04-4150-152E-F084-7DB21702DB35";
+	rename -uid "425D73C6-47F9-472A-179E-F29E7AC74775";
 	setAttr -s 14 ".lnk";
 	setAttr -s 14 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A7549BBB-443C-1167-FEFF-55980A90162F";
+	rename -uid "34ED3AD0-4A56-FDD6-8764-4F9A8B6B49DD";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "BECE50A0-437D-43B9-6AE0-0D82FA3FDC60";
+	rename -uid "FB3353B7-4E43-476C-AC2C-F79CD7A1E10F";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "611BA1E1-41B7-1B57-3334-FEB418727675";
+	rename -uid "B5CA4A33-41FA-4ECD-8729-199FBC0BE301";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 3 ".dli";
@@ -2418,7 +2419,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "61A48A48-46F5-9420-1FD4-5293498352F0";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D51EC304-4B10-6574-1B5E-D98A7B18E328";
+	rename -uid "20C2FF2B-4B3D-4130-3305-D8A7CAACF322";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3B2B05CA-401E-3C73-0928-4C9C285E138E";
 	setAttr ".g" yes;
@@ -2739,11 +2740,11 @@ createNode reference -n "ChairRN";
 		" -type \"string\" \"map1\""
 		3 "Chair:polySplitRing2.output" "|Chair:ChairMesh2|Chair:polySurface8|Chair:polySurfaceShape12.inMesh" 
 		""
-		3 "Chair:polySplitRing5.output" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
+		3 "Chair:polySplitRing4.output" "|Chair:ChairMesh2|Chair:polySurface4|Chair:polySurfaceShape8.inMesh" 
 		""
 		3 "Chair:polySplitRing3.output" "|Chair:ChairMesh2|Chair:polySurface1|Chair:polySurfaceShape5.inMesh" 
 		""
-		3 "Chair:polySplitRing4.output" "|Chair:ChairMesh2|Chair:polySurface4|Chair:polySurfaceShape8.inMesh" 
+		3 "Chair:polySplitRing5.output" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
 		""
 		5 4 "ChairRN" "|Chair:ChairMesh2|Chair:ChairMesh2|Chair:ChairMeshShape2.inMesh" 
 		"ChairRN.placeHolderList[1]" ""
@@ -2825,7 +2826,7 @@ createNode reference -n "ChairRN1";
 		2 "Chair1:groupParts2" "groupId" " 335"
 		2 "Chair1:groupParts3" "groupId" " 336"
 		2 "Chair1:groupParts4" "groupId" " 337"
-		3 "Chair1:groupId58.groupId" "Chair1:groupParts3.groupId" ""
+		3 "Chair1:groupId56.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Chair1:polySplitRing2.output" "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12.inMesh" 
 		""
 		3 "Chair1:groupId57.groupId" "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12.instObjGroups.objectGroups[0].objectGroupId" 
@@ -2834,7 +2835,20 @@ createNode reference -n "ChairRN1";
 		""
 		3 "|Chair1:ChairMesh2|Chair1:polySurface8|Chair1:polySurfaceShape12.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		3 "Chair1:groupId59.groupId" "Chair1:groupParts4.groupId" ""
+		3 "Chair1:groupId57.groupId" "Chair1:groupParts2.groupId" ""
+		3 "Chair1:groupId59.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "Chair1:groupId58.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "Chair1:groupId57.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "Chair1:polySplitRing3.output" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.inMesh" 
+		""
+		3 "Chair1:groupId58.groupId" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "Chair1:groupId56.groupId" "Chair1:groupParts1.groupId" ""
 		3 "Chair1:polySplitRing4.output" "|Chair1:ChairMesh2|Chair1:polySurface4|Chair1:polySurfaceShape8.inMesh" 
 		""
 		3 "Chair1:groupId59.groupId" "|Chair1:ChairMesh2|Chair1:polySurface4|Chair1:polySurfaceShape8.instObjGroups.objectGroups[0].objectGroupId" 
@@ -2851,20 +2865,7 @@ createNode reference -n "ChairRN1";
 		""
 		3 "|Chair1:ChairMesh2|Chair1:ChairMesh2|Chair1:ChairMeshShape2.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Chair1:groupId58.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "Chair1:groupId56.groupId" "Chair1:groupParts1.groupId" ""
-		3 "Chair1:groupId59.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "Chair1:polySplitRing3.output" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.inMesh" 
-		""
-		3 "Chair1:groupId58.groupId" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|Chair1:ChairMesh2|Chair1:polySurface1|Chair1:polySurfaceShape5.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Chair1:groupId57.groupId" "Chair1:groupParts2.groupId" ""
-		3 "Chair1:groupId56.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "Chair1:groupId59.groupId" "Chair1:groupParts4.groupId" ""
+		3 "Chair1:groupId58.groupId" "Chair1:groupParts3.groupId" ""
 		5 4 "ChairRN1" "|Chair1:ChairMesh2|Chair1:ChairMesh2|Chair1:ChairMeshShape2.inMesh" 
 		"ChairRN1.placeHolderList[1]" ""
 		5 4 "ChairRN1" "|Chair1:ChairMesh2|Chair1:polySurface4|Chair1:polySurfaceShape8.inMesh" 
@@ -3324,19 +3325,19 @@ createNode reference -n "organicPropRN";
 		+ "9996 -9.33021160000000016 -7.80790950000000006 -6.2503972000000001 -9.33004189999999944 -9.21550560000000019 -7.29765029999999992 -9.35181240000000003 -9.5615673000000001 -6.61506509999999981 -9.34129330000000024 -9.43943690000000046 -6.97816040000000015 -9.32047080000000072 -7.68305110000000013 -6.57793860000000041 -9.32024859999999933 -8.35724830000000019 -7.0856028000000002 -9.33073229999999931 -8.56389049999999941 -6.78644560000000041 -9.34070969999999967 -8.68222809999999967 -6.44388290000000019 -9.36742590000000064 -9.47366809999999937 -5.87715289999999957 -9.36065669999999983 -9.572093 -6.24163439999999969 -9.33497050000000073 -7.81530280000000044 -6.05071539999999963 -9.34763339999999943 -8.69065860000000079 -6.15171479999999971 -9.35243419999999936 -8.61169340000000005 -5.88645550000000028 -9.30045409999999961 -5.20426889999999975 -5.60923619999999978 -9.30335239999999963 -6.67410950000000014 -6.5703049 -9.32009030000000038 -6.93811230000000023 -6.04397249999999975 -9.31016059999999968 -6.79234929999"
 		+ "99997 -6.3642297000000001 -9.29241279999999925 -5.000453 -5.8052463999999997 -9.29562759999999955 -5.84415960000000023 -6.29002429999999979 -9.30049129999999913 -5.89600939999999962 -6.11871529999999986 -9.31020930000000035 -6.0709685999999996 -5.82914349999999981 -9.32199669999999969 -6.889801 -5.926106 -9.32261470000000081 -6.94929310000000022 -5.9434041999999998 -9.29808330000000005 -5.27876809999999974 -5.76645369999999957 -9.31038859999999957 -6.10069369999999989 -5.84338089999999966 -9.30666639999999923 -6.02945710000000012 -5.95115420000000039"
 		)
-		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:DirtShape.instObjGroups" 
+		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf1|organicProp:Potted_Plant:LeahShape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf5|organicProp:Potted_Plant:LeahShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:PotShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf4|organicProp:Potted_Plant:LeahShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf1|organicProp:Potted_Plant:LeahShape1.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf2|organicProp:Potted_Plant:LeahShape2.instObjGroups" 
+		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:DirtShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf3|organicProp:Potted_Plant:LeafShape3.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf5|organicProp:Potted_Plant:LeahShape2.instObjGroups" 
+		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf2|organicProp:Potted_Plant:LeahShape2.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:Dirt|organicProp:Potted_Plant:Leaf4|organicProp:Potted_Plant:LeahShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 1 "organicPropRN" "|organicProp1|organicProp:Potted_Plant:Pot|organicProp:Potted_Plant:PotShape.instObjGroups" 
 		"organicPropRN.placeHolderList[3]" ":initialShadingGroup.dsm"
@@ -3471,20 +3472,20 @@ createNode reference -n "organicPropRN";
 		+ "99999957 -9.14274409999999982 -5.51374239999999993 -5.88165709999999997 -9.12913320000000006 -5.51530840000000033 -5.89472289999999965 -9.12658880000000039 -5.51695440000000037 -5.91511109999999984 -9.1363152999999997 -5.51798009999999994 -5.93326330000000013 -9.15376760000000012 -5.5179052000000004 -5.94067670000000003 -9.17076680000000088 -5.51669259999999984 -5.93388989999999961 -9.17935559999999917 -5.51499839999999963 -5.91606379999999987 -9.24983879999999914 -6.067441 -5.7445396999999998 -9.23751159999999949 -6.06793639999999979 -5.72875069999999997 -9.21986290000000075 -6.06962389999999985 -5.72438760000000002 -9.20511250000000025 -6.0715956999999996 -5.733532 -9.20016479999999959 -6.07295989999999986 -5.75191780000000019 -9.20735550000000025 -6.073132 -5.77093979999999984 -9.22333339999999957 -6.072031 -5.78168059999999961 -9.24060339999999947 -6.07011560000000028 -5.77910039999999992 -9.25107670000000049 -6.06834890000000016 -5.76441289999999995 -9.37126160000000041 -6.64706039999999998 -5.6551761999"
 		+ "9999965 -9.36139870000000052 -6.64863970000000037 -5.63744539999999983 -9.34487919999999939 -6.65129139999999985 -5.62953759999999992 -9.32940289999999983 -6.65375280000000036 -5.63515760000000032 -9.32219890000000007 -6.654891 -5.651701 -9.32666210000000007 -6.65416960000000035 -5.671452 -9.34072489999999966 -6.65192409999999956 -5.68513870000000043 -9.357789 -6.64921570000000006 -5.68633460000000035 -9.36984920000000088 -6.64728829999999959 -5.6744823000000002 -9.26148410000000055 -2.24050780000000005 -6.6175556000000002"
 		)
-		3 "organicProp:groupId3.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "organicProp:groupId2.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "organicProp:groupId3.groupId" "|organicProp1|organicProp:Flower|organicProp:FlowerShape.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|organicProp1|organicProp:Flower|organicProp:FlowerShape.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|organicProp1|organicProp:Flower|organicProp:FlowerShape.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "organicProp:groupId2.groupId" "|organicProp1|organicProp:Flower1|organicProp:Flower1Shape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|organicProp1|organicProp:Flower1|organicProp:Flower1Shape.instObjGroups.objectGroups[0].objectGrpColor" 
 		""
 		3 "|organicProp1|organicProp:Flower1|organicProp:Flower1Shape.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		3 "organicProp:groupId3.groupId" "|organicProp1|organicProp:Flower|organicProp:FlowerShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|organicProp1|organicProp:Flower|organicProp:FlowerShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|organicProp1|organicProp:Flower|organicProp:FlowerShape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "organicProp:groupId3.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "organicProp:groupId2.message" ":initialShadingGroup.groupNodes" "-na"
 		5 1 "organicPropRN" "|organicProp1|organicProp:Flower1|organicProp:Flower1Shape.instObjGroups" 
 		"organicPropRN.placeHolderList[1]" ""
 		5 1 "organicPropRN" "|organicProp1|organicProp:Flower|organicProp:FlowerShape.instObjGroups" 
@@ -4490,8 +4491,8 @@ createNode reference -n "BooksRN1";
 	setAttr ".phl[27]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"BooksRN1"
-		"BooksRN1" 0
 		"Books1:BooksRN" 0
+		"BooksRN1" 0
 		"BooksRN1" 9
 		5 3 "BooksRN1" "Books1:Books:polyMapCut110.output" "BooksRN1.placeHolderList[10]" 
 		"Books1:Books:Book4Shape.i"
@@ -4637,14 +4638,6 @@ createNode reference -n "BooksRN1";
 		2 "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape" "pt[0:31]" 
 		" -s 32 -type \"float3\" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
 		
-		3 "Books1:Books:polyMapCut114.output" "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape.inMesh" 
-		""
-		3 "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Books1:Books:polyMapCut113.output" "|Books1:Books:BookGRP|Books1:Books:Book10|Books1:Books:Book10Shape.inMesh" 
-		""
-		3 "|Books1:Books:BookGRP|Books1:Books:Book10|Books1:Books:Book10Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "Books1:Books:polyMapCut115.output" "|Books1:Books:BookGRP|Books1:Books:Book9|Books1:Books:Book9Shape.inMesh" 
 		""
 		3 "|Books1:Books:BookGRP|Books1:Books:Book9|Books1:Books:Book9Shape.instObjGroups" 
@@ -4657,6 +4650,10 @@ createNode reference -n "BooksRN1";
 		""
 		3 "|Books1:Books:BookGRP|Books1:Books:Book3|Books1:Books:Book3Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
+		3 "Books1:Books:polyMapCut112.output" "|Books1:Books:BookGRP|Books1:Books:Book8|Books1:Books:Book8Shape.inMesh" 
+		""
+		3 "|Books1:Books:BookGRP|Books1:Books:Book8|Books1:Books:Book8Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		3 "Books1:Books:polyMapCut118.output" "|Books1:Books:BookGRP|Books1:Books:Book2|Books1:Books:Book2Shape.inMesh" 
 		""
 		3 "|Books1:Books:BookGRP|Books1:Books:Book2|Books1:Books:Book2Shape.instObjGroups" 
@@ -4665,13 +4662,17 @@ createNode reference -n "BooksRN1";
 		""
 		3 "|Books1:Books:BookGRP|Books1:Books:Book7|Books1:Books:Book7Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "Books1:Books:polyMapCut112.output" "|Books1:Books:BookGRP|Books1:Books:Book8|Books1:Books:Book8Shape.inMesh" 
-		""
-		3 "|Books1:Books:BookGRP|Books1:Books:Book8|Books1:Books:Book8Shape.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "Books1:Books:polyMapCut117.output" "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape.inMesh" 
 		""
 		3 "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "Books1:Books:polyMapCut113.output" "|Books1:Books:BookGRP|Books1:Books:Book10|Books1:Books:Book10Shape.inMesh" 
+		""
+		3 "|Books1:Books:BookGRP|Books1:Books:Book10|Books1:Books:Book10Shape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "Books1:Books:polyMapCut114.output" "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape.inMesh" 
+		""
+		3 "|Books1:Books:BookGRP|Books1:Books:Book11|Books1:Books:Book11Shape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 4 "BooksRN1" "|Books1:Books:BookGRP|Books1:Books:Book1|Books1:Books:Book1Shape.inMesh" 
 		"BooksRN1.placeHolderList[1]" ""
@@ -4932,27 +4933,27 @@ createNode reference -n "sofaRN1";
 		0 "|sofa1:Cushion2" "|group2" "-s -r "
 		0 "|sofa1:Pillow" "|group2" "-s -r "
 		0 "|sofa1:Pillow1" "|group2" "-s -r "
-		2 "|group2|sofa1:pSphere2" "rotatePivot" " -type \"double3\" 5.9307400843209841 0.92332040749776456 4.09193627783136638"
+		2 "|group2|sofa1:pSphere2" "rotatePivot" " -type \"double3\" 5.9307400843209841 0.92332040749776456 4.09193627783136371"
 		
-		2 "|group2|sofa1:pSphere2" "scalePivot" " -type \"double3\" 5.9307400843209841 0.92332040749776456 4.09193627783136638"
+		2 "|group2|sofa1:pSphere2" "scalePivot" " -type \"double3\" 5.9307400843209841 0.92332040749776456 4.09193627783136371"
 		
-		2 "|group2|sofa1:SofaBase" "rotatePivot" " -type \"double3\" 0 3.02292248880891812 0.92282976606475842"
+		2 "|group2|sofa1:SofaBase" "rotatePivot" " -type \"double3\" 0 3.02292248880891812 0.92282976606475664"
 		
-		2 "|group2|sofa1:SofaBase" "scalePivot" " -type \"double3\" 0 3.02292248880891812 0.92282976606475842"
+		2 "|group2|sofa1:SofaBase" "scalePivot" " -type \"double3\" 0 3.02292248880891812 0.92282976606475664"
 		
-		2 "|group2|sofa1:SofaTop" "rotatePivot" " -type \"double3\" 0 3.98840306557117819 0.8388745105361437"
+		2 "|group2|sofa1:SofaTop" "rotatePivot" " -type \"double3\" 0 3.98840306557117774 0.83887451053614193"
 		
-		2 "|group2|sofa1:SofaTop" "scalePivot" " -type \"double3\" 0 3.98840306557117819 0.8388745105361437"
+		2 "|group2|sofa1:SofaTop" "scalePivot" " -type \"double3\" 0 3.98840306557117774 0.83887451053614193"
 		
 		2 "|group2|sofa1:SofaTop|sofa1:SofaTopShape" "instObjGroups.objectGroups" 
 		" -s 2"
-		2 "|group2|sofa1:Cushion" "rotatePivot" " -type \"double3\" -3.18192379843206474 3.15197038888385617 1.69352177120844871"
+		2 "|group2|sofa1:Cushion" "rotatePivot" " -type \"double3\" -3.18192379843206563 3.15197038888385572 1.69352177120844694"
 		
-		2 "|group2|sofa1:Cushion" "scalePivot" " -type \"double3\" -3.18192379843206474 3.15197038888385617 1.69352177120844871"
+		2 "|group2|sofa1:Cushion" "scalePivot" " -type \"double3\" -3.18192379843206563 3.15197038888385572 1.69352177120844694"
 		
-		2 "|group2|sofa1:Cushion2" "rotatePivot" " -type \"double3\" 3.23461692880622254 3.15197038888385661 1.70740168090449629"
+		2 "|group2|sofa1:Cushion2" "rotatePivot" " -type \"double3\" 3.23461692880622254 3.15197038888385661 1.70740168090449451"
 		
-		2 "|group2|sofa1:Cushion2" "scalePivot" " -type \"double3\" 3.23461692880622254 3.15197038888385661 1.70740168090449629"
+		2 "|group2|sofa1:Cushion2" "scalePivot" " -type \"double3\" 3.23461692880622254 3.15197038888385661 1.70740168090449451"
 		
 		2 "|group2|sofa1:Pillow" "rotatePivot" " -type \"double3\" -3.71701835709898454 5.58673121164367181 -0.79247635805656458"
 		
@@ -4968,18 +4969,15 @@ createNode reference -n "sofaRN1";
 		2 "sofa1:file1" "colorSpace" " -type \"string\" \"sRGB\""
 		2 "sofa1:file1" "viewNameUsed" " 0"
 		2 "sofa1:file1" "viewNameStr" " -type \"string\" \"<N/A>\""
-		3 "sofa1:groupId22.groupId" "|group2|sofa1:Pillow|sofa1:PillowShape.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|group2|sofa1:Pillow|sofa1:PillowShape.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|group2|sofa1:Pillow|sofa1:PillowShape.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
+		3 "sofa1:groupId21.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "|group2|sofa1:pSphere1|sofa1:pSphereShape1.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "sofa1:groupId23.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "|group2|sofa1:Cushion2|sofa1:CushionShape2.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		3 "sofa1:groupId22.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "|group2|sofa1:Cushion|sofa1:CushionShape.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|group2|sofa1:pSphere2|sofa1:pSphereShape2.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
-		3 "sofa1:groupId21.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "sofa1:groupId23.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "sofa1:groupId20.groupId" "|group2|sofa1:SofaTop|sofa1:SofaTopShape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|group2|sofa1:SofaTop|sofa1:SofaTopShape.instObjGroups.objectGroups[0].objectGrpColor" 
@@ -4992,12 +4990,15 @@ createNode reference -n "sofaRN1";
 		""
 		3 "|group2|sofa1:SofaTop|sofa1:SofaTopShape.instObjGroups.objectGroups[1]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|group2|sofa1:pSphere1|sofa1:pSphereShape1.instObjGroups" ":initialShadingGroup.dagSetMembers" 
-		"-na"
+		3 "sofa1:groupId22.groupId" "|group2|sofa1:Pillow|sofa1:PillowShape.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|group2|sofa1:Pillow|sofa1:PillowShape.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|group2|sofa1:Pillow|sofa1:PillowShape.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		3 "sofa1:groupId20.message" ":initialShadingGroup.groupNodes" "-na"
-		3 "|group2|sofa1:Cushion2|sofa1:CushionShape2.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		3 "|group2|sofa1:pSphere2|sofa1:pSphereShape2.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "sofa1:groupId22.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "sofa1:groupId23.groupId" "|group2|sofa1:Pillow1|sofa1:Pillow1Shape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 ":initialShadingGroup.memberWireframeColor" "|group2|sofa1:Pillow1|sofa1:Pillow1Shape.instObjGroups.objectGroups[0].objectGrpColor" 
@@ -5113,9 +5114,7 @@ createNode reference -n "BookShelfRN1";
 		
 		2 "|BookShelf1:BookShelf|BookShelf1:polySurface14" "scalePivot" " -type \"double3\" -0.006661510610236121 0.51619781428397982 11.19374565346001305"
 		
-		3 "BookShelf1:groupId193.message" ":initialShadingGroup.groupNodes" "-na"
-		
-		3 "BookShelf1:groupId195.message" ":initialShadingGroup.groupNodes" "-na"
+		3 "BookShelf1:groupId194.message" ":initialShadingGroup.groupNodes" "-na"
 		
 		3 "BookShelf1:groupId194.groupId" "|BookShelf1:BookShelf|BookShelf1:polySurface18|BookShelf1:polySurfaceShape22.instObjGroups.objectGroups[0].objectGroupId" 
 		""
@@ -5123,19 +5122,11 @@ createNode reference -n "BookShelfRN1";
 		""
 		3 "|BookShelf1:BookShelf|BookShelf1:polySurface18|BookShelf1:polySurfaceShape22.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "BookShelf1:groupId192.groupId" "|BookShelf1:BookShelf|BookShelf1:polySurface17|BookShelf1:polySurfaceShape21.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|BookShelf1:BookShelf|BookShelf1:polySurface17|BookShelf1:polySurfaceShape21.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|BookShelf1:BookShelf|BookShelf1:polySurface17|BookShelf1:polySurfaceShape21.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "BookShelf1:groupId193.groupId" "|BookShelf1:BookShelf|BookShelf1:polySurface14|BookShelf1:polySurfaceShape18.instObjGroups.objectGroups[0].objectGroupId" 
-		""
-		3 ":initialShadingGroup.memberWireframeColor" "|BookShelf1:BookShelf|BookShelf1:polySurface14|BookShelf1:polySurfaceShape18.instObjGroups.objectGroups[0].objectGrpColor" 
-		""
-		3 "|BookShelf1:BookShelf|BookShelf1:polySurface14|BookShelf1:polySurfaceShape18.instObjGroups.objectGroups[0]" 
-		":initialShadingGroup.dagSetMembers" "-na"
 		3 "BookShelf1:groupId192.message" ":initialShadingGroup.groupNodes" "-na"
+		
+		3 "BookShelf1:groupId193.message" ":initialShadingGroup.groupNodes" "-na"
+		
+		3 "BookShelf1:groupId195.message" ":initialShadingGroup.groupNodes" "-na"
 		
 		3 "BookShelf1:groupId195.groupId" "|BookShelf1:BookShelf|BookShelf1:polySurface15|BookShelf1:polySurfaceShape19.instObjGroups.objectGroups[0].objectGroupId" 
 		""
@@ -5143,8 +5134,18 @@ createNode reference -n "BookShelfRN1";
 		""
 		3 "|BookShelf1:BookShelf|BookShelf1:polySurface15|BookShelf1:polySurfaceShape19.instObjGroups.objectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "BookShelf1:groupId194.message" ":initialShadingGroup.groupNodes" "-na"
-		
+		3 "BookShelf1:groupId193.groupId" "|BookShelf1:BookShelf|BookShelf1:polySurface14|BookShelf1:polySurfaceShape18.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|BookShelf1:BookShelf|BookShelf1:polySurface14|BookShelf1:polySurfaceShape18.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|BookShelf1:BookShelf|BookShelf1:polySurface14|BookShelf1:polySurfaceShape18.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "BookShelf1:groupId192.groupId" "|BookShelf1:BookShelf|BookShelf1:polySurface17|BookShelf1:polySurfaceShape21.instObjGroups.objectGroups[0].objectGroupId" 
+		""
+		3 ":initialShadingGroup.memberWireframeColor" "|BookShelf1:BookShelf|BookShelf1:polySurface17|BookShelf1:polySurfaceShape21.instObjGroups.objectGroups[0].objectGrpColor" 
+		""
+		3 "|BookShelf1:BookShelf|BookShelf1:polySurface17|BookShelf1:polySurfaceShape21.instObjGroups.objectGroups[0]" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		5 0 "BookShelfRN1" "|BookShelf1:BookShelf|BookShelf1:polySurface14|BookShelf1:polySurfaceShape18.instObjGroups" 
 		"BookShelf1:lambert2SG.dagSetMembers" "BookShelfRN1.placeHolderList[1]" "BookShelfRN1.placeHolderList[2]" 
 		""
@@ -5396,19 +5397,19 @@ createNode reference -n "Potted_PlantRN1";
 		+ "000014 -6.747323 -5.557652 -9.23260690000000039 -6.77558659999999957 -5.82186029999999999 -8.25282190000000071 -6.7660866000000004 -5.83575529999999976 -8.61432650000000066 -6.745666 -6.8201274999999999 -9.69046119999999966 -6.7674726999999999 -7.14340639999999993 -8.97193719999999928 -6.75628950000000028 -7.01875260000000001 -9.35331060000000036 -6.75589990000000018 -5.71209140000000026 -8.95855519999999927 -6.74594589999999972 -6.18305349999999976 -9.48033050000000088 -6.75587270000000029 -6.36671690000000012 -9.1646775999999992 -6.76644470000000009 -6.48670010000000019 -8.80482770000000059 -6.78794 -7.14007430000000021 -8.20143129999999942 -6.77820010000000028 -7.18372730000000015 -8.58126640000000052 -6.77183489999999999 -5.85866359999999986 -8.40540309999999913 -6.77483889999999978 -6.51839540000000017 -8.49916930000000015 -6.781878 -6.4810257 -8.22283460000000055 -6.7668752999999997 -3.90292 -7.97907779999999978 -6.74933289999999975 -4.942276 -8.96423820000000049 -6.76612849999999977 -5.1893821000000004"
 		+ "4 -8.41023249999999933 -6.75600909999999999 -5.05038449999999983 -8.74712659999999964 -6.7599115000000003 -3.73033139999999985 -8.18682289999999924 -6.75175049999999999 -4.33271690000000032 -8.68236729999999923 -6.75698760000000043 -4.38712120000000017 -8.50251289999999926 -6.766428 -4.54576210000000014 -8.19731329999999936 -6.76916739999999972 -5.16267920000000036 -8.28762440000000034 -6.769074 -5.206615 -8.30490879999999976 -6.76288990000000023 -3.94621969999999989 -8.14248369999999966 -6.76622150000000033 -4.56723069999999964 -8.21180060000000012 -6.7626672000000001 -4.50351380000000034 -8.32547280000000001"
 		)
-		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf2|Potted_Plant1:LeahShape2.instObjGroups" 
+		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf3|Potted_Plant1:LeafShape3.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf1|Potted_Plant1:LeahShape1.instObjGroups" 
+		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf4|Potted_Plant1:LeahShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:DirtShape.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Potted_Plant1:Pot|Potted_Plant1:PotShape.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
+		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf1|Potted_Plant1:LeahShape1.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf2|Potted_Plant1:LeahShape2.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf5|Potted_Plant1:LeahShape2.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf3|Potted_Plant1:LeafShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf4|Potted_Plant1:LeahShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 1 "Potted_PlantRN1" "|Potted_Plant1:Pot|Potted_Plant1:Dirt|Potted_Plant1:Leaf5|Potted_Plant1:LeahShape2.instObjGroups" 
 		"Potted_PlantRN1.placeHolderList[1]" ":initialShadingGroup.dsm"

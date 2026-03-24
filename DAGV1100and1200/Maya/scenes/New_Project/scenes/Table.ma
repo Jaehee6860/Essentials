@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Table.ma
-//Last modified: Sun, Mar 22, 2026 02:55:36 AM
+//Last modified: Tue, Mar 24, 2026 12:00:51 AM
 //Codeset: 949
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
 file -r -ns "Table" -dr 1 -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "66CEC088-4696-1738-EFFD-DCA8DCA72449";
+fileInfo "UUID" "7E4B26C1-4CE2-B87C-EFD0-BEB1ABF9CB3F";
 createNode transform -s -n "persp";
 	rename -uid "1F99FFF9-483D-2F6E-5396-3D8FE2603537";
 	setAttr ".v" no;
@@ -75,7 +75,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 createNode fosterParent -n "TableRNfosterParent1";
-	rename -uid "6EBD400D-46C2-22D5-C70D-079A1FCA7026";
+	rename -uid "2F5D4EFE-4BBE-5337-8C50-03BC5B7D0316";
 createNode mesh -n "Table:polySurfaceShape1" -p "TableRNfosterParent1";
 	rename -uid "88BD05A5-4439-15D9-6D3B-9393FB15E32B";
 	setAttr -k off ".v";
@@ -629,20 +629,20 @@ createNode reference -n "TableRN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A7A21658-48C4-14CC-5449-47ABDD6A370C";
+	rename -uid "595F620F-4E6A-BCFB-7FF1-3B8347DD007A";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D24B810F-4A9A-B0A9-FC0C-A298967974CC";
+	rename -uid "EDA49178-4598-7D4C-0567-F6893CE6C4DC";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6AFE704F-452A-61C3-66C9-3599CDC6AA77";
+	rename -uid "6041DE97-49F4-09B7-0AB5-D8B56BAF25FD";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "0BF10B89-4158-9D0A-B380-E987D763C9DB";
+	rename -uid "E3480C8F-48E2-F636-96D3-848C9409009E";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "8F12892F-40D3-F100-D8C9-5386E4A80317";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9D5AD645-41EA-39C7-B785-6CBE012A4417";
+	rename -uid "92538115-42A3-4BAB-D583-86A222CD262F";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "AEC90492-4B9E-A9D4-F561-5A997EADA35C";
 	setAttr ".g" yes;
@@ -1603,6 +1603,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "Table:polyTweakUV9.uvtk[0]" "TableRN.phl[1]";
 connectAttr "transformGeometry1.og" "TableRN.phl[2]";
 connectAttr "TableRN.phl[3]" "polyPlanarProj1.mp";
