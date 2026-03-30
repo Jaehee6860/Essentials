@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Scene2_Main.ma
-//Last modified: Sat, Mar 28, 2026 02:17:16 AM
+//Last modified: Sun, Mar 29, 2026 08:35:43 PM
 //Codeset: 949
 file -rdi 1 -ns "Asset_1" -rfn "Asset_1RN" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/New_Project/scenes/Scene2/Asset 1.ma";
 file -rdi 1 -ns "Asset_2" -rfn "Asset_1RN1" -op "v=0;" -typ "mayaAscii" "C:/githubprojects/Essentials/DAGV1100and1200/Maya//scenes/New_Project/scenes/Scene2/Asset 1.ma";
@@ -16,7 +16,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "5D0D39BA-4505-CD2C-BE85-F086C44D5ED0";
+fileInfo "UUID" "C143E898-4D7B-D211-719C-9DBEFB7A15C8";
 createNode transform -s -n "persp";
 	rename -uid "9D3FD3E5-4B1A-6E91-6350-29BFCDF937E4";
 	setAttr ".v" no;
@@ -6976,8 +6976,8 @@ createNode mesh -n "Neck1Shape" -p "Neck1";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Torso1";
 	rename -uid "7CFD174F-4FED-B0C7-3D98-55BCED4A7914";
-	setAttr ".t" -type "double3" 2.984065024879174 9.5704232716588944 3.5596873048786852 ;
-	setAttr ".s" -type "double3" 1.055898062176337 2.951086372945658 2.0947531535509776 ;
+	setAttr ".rp" -type "double3" 2.984065024879174 9.5704232716588944 3.5596873048786852 ;
+	setAttr ".sp" -type "double3" 2.984065024879174 9.5704232716588944 3.5596873048786852 ;
 createNode mesh -n "Torso1Shape" -p "Torso1";
 	rename -uid "97AD1493-4B8C-C8D2-1319-B68F822AC67A";
 	setAttr -k off ".v";
@@ -7005,6 +7005,10 @@ createNode mesh -n "Torso1Shape" -p "Torso1";
 	setAttr ".clst[1].clsn" -type "string" "SculptMaskColorTemp";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 8 ".pt[0:7]" -type "float3"  2.956116 8.5948801 4.1070638 
+		3.0120142 8.5948801 4.1070638 2.956116 10.545966 4.1070638 3.0120142 10.545966 4.1070638 
+		2.956116 10.545966 3.0123107 3.0120142 10.545966 3.0123107 2.956116 8.5948801 3.0123107 
+		3.0120142 8.5948801 3.0123107;
 	setAttr -s 8 ".vt[0:7]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
@@ -9167,20 +9171,20 @@ createNode mesh -n "pCubeShape22" -p "pCube22";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "D9B3B71C-42A6-E9FF-9AF8-0DA603A6DA77";
+	rename -uid "3643459B-4D53-A87A-8B62-9CA418D9C9F2";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "59DB4293-4038-B5E9-6240-A0BA40139A58";
+	rename -uid "0EDB0A51-44FC-B55D-9A6A-EC8324692BFF";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "B44672E6-4DD7-5F26-F56D-74BD623D0FF3";
+	rename -uid "3FB26175-4998-2FA2-5D73-6FB2D90A6B3E";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "86768D18-4DA2-3D80-7E52-B99DE352F4A8";
+	rename -uid "C5988543-4371-D7A3-B805-8ABD56C84FEA";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "BBFC3551-40B1-BE89-0FC1-1F9706FB84A8";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A51A2123-45BD-CECB-058E-FF9460777FDF";
+	rename -uid "9D2478B3-4724-976E-3F5C-30938B42B520";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "34811824-4C19-C2AB-1647-CEA6B15275E0";
 	setAttr ".g" yes;
