@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Asset 1.ma
-//Last modified: Sun, Apr 26, 2026 07:45:00 PM
+//Last modified: Mon, Apr 27, 2026 11:45:41 PM
 //Codeset: 949
 requires maya "2025ff03";
 currentUnit -l centimeter -a degree -t film;
@@ -9,7 +9,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "2394CF57-47D6-386A-E365-D598EA921837";
+fileInfo "UUID" "2C2BA95B-4AF4-949B-3E9F-FEAAAF870716";
 createNode transform -s -n "persp";
 	rename -uid "39894F4B-42EA-1732-D2B6-6A9DC093D178";
 	setAttr ".v" no;
@@ -2233,20 +2233,20 @@ createNode mesh -n "pCylinder15Shape" -p "pCylinder15";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "BEA4ACEA-477A-555A-D623-FD84FF0EFAC6";
+	rename -uid "F2DCE398-4838-3830-8FEF-80860325AFBE";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DEC12A22-4CA4-ACAA-0491-43829FCED20A";
+	rename -uid "7F1DC2AF-4157-0B01-A4AB-C880C011CA7C";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "3A121F17-408E-9F88-0255-579316333239";
+	rename -uid "BDEFDA27-441C-5C09-6E9C-13A56674A821";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "53FC430C-423D-B606-B22B-9B83501C22D9";
+	rename -uid "8F523920-44DB-D96E-E3BA-5E9AE01CAAEF";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "0C93D864-434C-2496-8C44-BF8DE0D20A03";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E77DC2A0-4AC7-11E8-33F8-D0ABFA6A531D";
+	rename -uid "0E7AA0CE-415C-3229-7B8B-DB8FCD52B8A8";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "A0F6B9B7-4337-D255-7B53-519AD107B753";
 	setAttr ".g" yes;

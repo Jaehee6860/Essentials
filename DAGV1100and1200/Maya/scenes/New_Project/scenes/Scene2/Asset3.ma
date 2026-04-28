@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Asset3.ma
-//Last modified: Sun, Apr 26, 2026 07:41:38 PM
+//Last modified: Mon, Apr 27, 2026 11:46:08 PM
 //Codeset: 949
 requires maya "2025ff03";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "A2538BDE-4671-33F2-226B-6AAFFF84E66E";
+fileInfo "UUID" "7295D572-43B4-5691-A682-0AB037A0E133";
 createNode transform -n "Table";
 	rename -uid "F8C9CDD8-49F0-48A6-C4A6-C9B4FFABDFB4";
 createNode transform -n "pCube1" -p "Table";
@@ -401,20 +401,20 @@ createNode materialxStack -n "materialXStackShape1" -p "materialXStack1";
 	setAttr -k off ".v";
 	setAttr ".docs" -type "string" "[\n    {\n        \"document\": \"AAABW3icdZBBDsIgEEX3PQXhAGLjxgWlG5fWKzSjTCNJoQ1Q095eUsQQotvPz3+P4e2qR/JC69RkGlofjrQVFdfg0SoY1/zpdKaiIoR3sMEV9B2tJwY0NjRLakr8NofMLXaAB7onSLSUmEmixCF2b5d+jPW+qLGd8AmTRUbpS0zqZISwXgzs3mFXmXlJzgX4r/SvH0ZLVlDC3dj3cKJ6A3YsdyU=\",\n        \"name\": \"document1\"\n    }\n]\n";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "C82BDB88-40D0-E48B-C426-19AA6FF464B0";
+	rename -uid "6E991DF5-490E-96C2-09E0-BB97275ABF02";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "B6E7CA86-4CD6-B68A-94F3-2D8D228B14A7";
+	rename -uid "12C05D37-44C4-EB5B-569A-D0957E208798";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "01158AFA-4E77-2187-C128-318DF5578777";
+	rename -uid "D6C83DA9-4BC5-4D1C-D754-BAABC67E7A7B";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "683F6517-4D88-E9E9-4B6B-12878E3A531B";
+	rename -uid "E4D178BF-4663-284A-CC05-09A5E2692528";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "5A520387-4523-F1EB-16F9-4CB5CFDE7414";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "EB8A3986-4981-13BB-26FA-589FD181EAB0";
+	rename -uid "861856E2-401B-522E-C217-889718153CF8";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D36B44FF-47C0-819C-22A2-E8B78C639CCD";
 	setAttr ".g" yes;

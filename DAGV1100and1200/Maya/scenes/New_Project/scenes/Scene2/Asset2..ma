@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Asset2..ma
-//Last modified: Sun, Apr 26, 2026 07:41:54 PM
+//Last modified: Mon, Apr 27, 2026 11:45:57 PM
 //Codeset: 949
 requires maya "2025ff03";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "48E862A0-468E-7808-060B-03B3EDE4E46F";
+fileInfo "UUID" "5DDA0BCB-4AD2-F546-0895-A09D0BBD8439";
 createNode transform -n "polySurface8";
 	rename -uid "48B49E4F-4BC6-E35F-85C7-30B29BB2C600";
 	setAttr ".rp" -type "double3" 5.1573004015951405 9.5704232716588944 6.7972264751203939 ;
@@ -12893,20 +12893,20 @@ createNode materialxStack -n "materialXStackShape1" -p "materialXStack1";
 		"[\n    {\n        \"document\": \"AAABW3icdZBBDsIgEEX3PQXhAGLjxgWlG5fWKzSjTCNJoQ1Q095eUsQQotvPz3+P4e2qR/JC69RkGlofjrQVFdfg0SoY1/zpdKaiIoR3sMEV9B2tJwY0NjRLakr8NofMLXaAB7onSLSUmEmixCF2b5d+jPW+qLGd8AmTRUbpS0zqZISwXgzs3mFXmXlJzgX4r/SvH0ZLVlDC3dj3cKJ6A3YsdyU=\",\n        \"name\": \"document1\"\n    },\n    {\n        \"document\": \"AAABW3icdZBBDsIgEEX3PQXhAGLjxgWlG5fWKzSjTCNJoQ1Q095eUsQQotvPz3+P4e2qR/JC69RkGlofjrQVFdfg0SoY1/zpdKaiIoR3sMEV9B2tJwY0NjRLakr8NofMLXaAB7onSLSUmEmixCF2b5d+jPW+qLGd8AmTRUbpS0zqZISwXgzs3mFXmXlJzgX4r/SvH0ZLVlDC3dj3cKJ6A3YsdyU=\",\n        \"name\": \"document2\"\n    },\n    {\n        \"document\": \"AAABW3icdZBBDsIgEEX3PQXhAGLjxgWlG5fWKzSjTCNJoQ1Q095eUsQQotvPz3+P4e2qR/JC69RkGlofjrQVFdfg0SoY1/zpdKaiIoR3sMEV9B2tJwY0NjRLakr8NofMLXaAB7onSLSUmEmixCF2b5d+jPW+qLGd8AmTRUbpS0zqZISwXgzs3mFXmXlJzgX4r/SvH0ZLVlDC3dj3cKJ6A3YsdyU=\",\n        \"name\": \"document3\"\n    },\n    {\n        \"document\": \"AAABUXics7GvyM1RKEstKs7Mz7NVMtQzULK347LJTSxJLcpMzKlAljK2ULLjUlCw8U2sTHTKyczLU8hLzE21VYLzDZUUSioLgCLFpUVpicmpxRmJKalFSgp5+SmpKalpEJV+LvFJIMXxaIr0wWZDBWH2I9kQj2oFTAWS6UCT0bSD3Qs0NTOvoLQEahaatTgdjOk3iAv10ewAhpY+PLjsuABcpnMB\",\n"
 		+ "        \"name\": \"document4\"\n    },\n    {\n        \"document\": \"AAABsnicdZHLDoJADEX3fEUzawMiaiThsXGp/gKpMESSeZDhEfh7R2DMSHDVtL25PW2jdOAMeqqaSoqY+O6epIkTcWypqpANdiu4kMQBiO444g35k6oWBHIaE6viE2jHWteaTpWY0+aFBVUEhCxoQctZ+7hmbJZnv7KPv55Qiboz3rlkUhnTKQkI9Mg6ne7dQ+ifd6Dj8RSaSMCbOD0Layoss8xyFny2pjcaC1xDrwy2cFdr/73F1uEW7NUU/Q7v+4/EeQPyn4+b\",\n        \"name\": \"document5\"\n    },\n    {\n        \"document\": \"AAABt3icdVHJDoIwEL3zFZOeDVAWhYTl4lH9BTJCjSRlSVkCf2/ZTCV467y+vGUmiIeCQ89Ek1dlSKhukjjSggJbJnLkg/pleyTSAII7jnjD4slECyUWLCQKQgm0Yy2xphMvTFnzxowJAmWVsYy9Fu7jmvCFnvzSJn3pkJd1t2mnFa/EJjoPNoEeeSdHU7eob1HnBKbuO57vTY+LZZ5dl4AxhzWUbDOwGm4NlQbJvsLGUdLL5DuBo8y77n8XcrS9NfbORd7E+B4l0j4wupCj\",\n        \"name\": \"document6\"\n    },\n    {\n        \"document\": \"AAABW3icdZBBDsIgEEX3PQXhAGLjxgWlG5fWKzSjTCNJoQ1Q095eUsQQotvPz3+P4e2qR/JC69RkGlofjrQVFdfg0SoY1/zpdKaiIoR3sMEV9B2tJwY0NjRLakr8NofMLXaAB7onSLSUmEmixCF2b5d+jPW+qLGd8AmTRUbpS0zqZISwXgzs3mFXmXlJzgX4r/SvH0ZLVlDC3dj3cKJ6A3YsdyU=\",\n        \"name\": \"document7\"\n    }\n]\n");
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A68BB1AA-47B3-D1B0-3B13-B8B7EE248068";
+	rename -uid "CA645E59-46D4-12A9-854C-E4BDDFFD580E";
 	setAttr -s 17 ".lnk";
 	setAttr -s 17 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2C3EFBA1-4C93-29A5-DE22-7FA2301FD19A";
+	rename -uid "F124932C-44B6-C4B1-56A6-DC8FDF2D20AD";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4FAB8586-44C2-5E2E-2525-C996C81671B3";
+	rename -uid "27C2437A-45D0-1B06-3EF1-2FAFC81544AA";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "24969585-4BBB-2AA9-2951-6D8CBDF2ECFE";
+	rename -uid "804C37C3-4022-19B9-0822-B8ACEBEC0F1B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "F40B35BA-4070-7561-C487-448D7784D45F";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "6080E20B-4B5C-D829-AEB3-E4B4DCBD1823";
+	rename -uid "AAECD334-46E0-A747-2459-A6B61B7900D1";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "02CB99ED-406A-B167-B2C8-81A9DF5CA6D6";
 	setAttr ".g" yes;
